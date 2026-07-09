@@ -446,8 +446,8 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
       } else {
-        // A specific level shows only activities with that difficulty
-        if (details.difficulty !== currentDifficultyFilter) {
+        // A specific level shows activities with that difficulty, plus activities with no difficulty (for all levels)
+        if (details.difficulty && details.difficulty !== currentDifficultyFilter) {
           return;
         }
       }
